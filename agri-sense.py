@@ -49,7 +49,7 @@ while True:
     ec  = round(readEC(ecVoltage, 25), 4)
     ph = round(read_PH(phVoltage), 2)
     
-    with open(filename, "a", newline="") as csvfile:
+    with open("data/"+filename, "a", newline="") as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=' ')
         spamwriter.writerow([ec, ph])
     print("EC: %.4f mS/cm \t pH: %.2f" % (ec, ph))
