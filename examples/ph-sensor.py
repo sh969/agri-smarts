@@ -16,6 +16,6 @@ Press CTRL+C to exit.
 
 while True:
     four = explorerhat.analog.four.read()
-    pHValue = 3.5*four+pH-offset # formula from example code
+    pHValue = 3.5*four+pH_offset # formula from example code
     print(pHValue)
     time.sleep(1.0)
