@@ -7,6 +7,9 @@ import explorerhat
 import csv
 from scd4x import SCD4X
 
+# import matplotlib.pyplot as plt
+# from matplotlib.animation import FuncAnimation
+
 ############################# default variables for EC sensor
 _kvalue                 = 1.0
 _kvalueLow              = 1.0
@@ -42,6 +45,9 @@ device.start_periodic_measurement()
 filetime = datetime.now()
 filename = filetime.strftime("%y%m%d_%H%M%S")+".csv"
 
+# fig = plt.figure()
+# plt.show()
+
 # infinite measurement loop
 while True:
     ecVoltage = explorerhat.analog.three.read()
@@ -51,9 +57,9 @@ while True:
     co2, temperature, relative_humidity, timestamp = device.measure()
     
     # save line to csv file after measurement
-    with open("data/"+filename, "a", newline="") as csvfile:
-        spamwriter = csv.writer(csvfile, delimiter=' ')
-        spamwriter.writerow([round(timestamp), ec, ph, co2, round(temperature,1), round(relative_humidity,1)])
-    print("EC: %.6f S/cm \t pH: %.2f \t CO2: %d ppm" % (ec, ph, co2))
-    # print("EC: %.3f V \t pH: %.3f V \t CO2: %d ppm"% (ecVoltage, phVoltage, co2))
+    # with open("data/"+filename, "a", newline="") as csvfile:
+    #     spamwriter = csv.writer(csvfile, delimiter=' ')
+    #     spamwriter.writerow([round(timestamp), ec, ph, co2, round(temperature,1), round(relative_humidity,1)])
+    # print("EC: %.6f S/cm \t pH: %.2f \t CO2: %d ppm" % (ec, ph, co2))
+    print("EC: %.3f V \t pH: %.3f V \t CO2: %d ppm"% (ecVoltage, phVoltage, co2))
     time.sleep(1.0)

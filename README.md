@@ -6,4 +6,6 @@ The Python code here requires the following:
 - DFR0300 EC sensor (on pin A3 on HAT)
 - [SCD41](https://github.com/pimoroni/scd4x-python) CO2 sensor
 
+This is a test.
+
 Run agri-sense.py to start measuring.
