@@ -1,7 +1,5 @@
 # Agri-SMARTs: A smart Raspberry Pi based sensor for hydroponics applications
 
-<img src="https://github.com/sh969/agri-smarts/blob/master/images/sensor-node.png?raw=true">
-
 The Python code here requires the following:
 - [ExplorerHAT Pro](https://github.com/pimoroni/explorer-hat) (i2c enabled!)
 - SEN016 pH sensor (on pin A4 on HAT)
@@ -14,3 +12,5 @@ Run run-gui.py for launching the GUI.
 
 **Version 2** (August 22: Sensors attached to Arduino Wifi node):       
 Run print-data.py to start recording data every 5s.
+
+<img src="https://github.com/sh969/agri-smarts/blob/master/images/sensor-node.png?raw=true">
