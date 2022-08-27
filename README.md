@@ -5,7 +5,10 @@ The Python code here requires the following:
 - SEN016 pH sensor (on pin A4 on HAT)
 - DFR0300 EC sensor (on pin A3 on HAT)
 - [SCD41](https://github.com/pimoroni/scd4x-python) CO2 sensor
+- 3x Grow capacitive moisture sensors
 
-This is a test.
+Version 1, June 22 (sensors attached directly to Pi via Explorerhat):
+Run agri-sense.py for launching the GUI.
 
-Run agri-sense.py to start measuring.
+Version 2, August 22 (sensors attached to Arduino Wifi node):       
+Run print-data.py to start recording data every 5s.
