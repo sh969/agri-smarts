@@ -1,4 +1,4 @@
-# This is the repository for the Agri-SMARTs project.
+# Agri-SMARTs: A smart Raspberry Pi based sensor for hydroponics applications
 
 <img src="https://github.com/sh969/agri-smarts/blob/master/images/sensor-node.png?raw=true">
 
